@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Details - Kanyáman</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+
+
+
+.pogi {
+    padding: 1.5em;
+  width: 100%;
+  height: 100%;
+
+}
+  .product {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    margin: 1em 0;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.15);
+    transition: all .1s ease-in-out;
+  }
+ 
+    .img-container {
+      flex: 2;
+    }
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    
+    .product-info {
+      background: #fff;
+      flex: 3;
+    }
+      .product-content {
+        padding: .2em 0 .2em 1em;
+      }
+   
+        ul li {
+          color: #636363;
+          font-size: .9em;
+          margin-left: 1px;
+        }
+    .flexpogi{
+        display: flex;
+       
+        justify-content:space-evenly;
+    }
+
+    .containermo
+{
+width: 1200px;
+height: auto;
+margin: auto;
+}
+.containermo .search
+{
+display: flex;
+padding: 30px 0px;
+justify-content: space-between;
+}
+.containermo .search h1
+{
+letter-spacing: 3px;
+display: inline-block;
+border-bottom: 2px solid green;
+padding-bottom: 10px;
+}
+.containermo .search input
+{
+width: 60%;
+padding: 5px 16px;
+background: transparent;
+border: 1px solid #000;
+font-size: 20px;
+text-transform: capitalize;
+letter-spacing: 3px;
+outline: none;
+}
+.containermo .search input::placeholder
+{
+color: green;
+font-weight: 500;
+}
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Kany<span class="text-dark">áman</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link  ">Services</a>
+                            <a href="event.html" class="nav-item nav-link">Events</a>
+
+                            <a href="menu.html" class="nav-item nav-link active" >Menu</a>
+                        
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                       
+                        <a href="book.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Inquire Now</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Kanyáman Menu</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="menu.html">Menu</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Details</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+     
+          <div class="containermo">
+          <div class="search">
+          <h1>Menu</h1>
+          <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+          </div>
+          </div>
+ <!-- START KO TO-->
+        <div class="pogi">
+  <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/BEEF STEAK_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Beef Steak</h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>A tender cut of beef is sliced thin, then marinated with lemon juice and soy sauce</li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/GARLIC CHICKEN_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Garlic Chicken</h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Made with a luscious, garlic-infused sauce</li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/CHICKEN PASTEL.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Chicken Pastel</h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Traditional stew or pie from the Philippines made with chicken, sausages, mushrooms, peas, carrots, potatoes, soy sauce, and various spices in a creamy sauce.</li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+            
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/BABY BACK RIBS_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Baby Back Ribs</h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Oven-baked baby back ribs seasoned with a homemade dry rub, glazed with barbeque sauce and baked</li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/CHICKEN CORDON BLEU_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Chicken Cordon Bleu</h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Is a dish of meat wrapped around a slice of ham and a slice of cheese, breaded, and then pan-fried or baked</li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/RELYENONG BANGUS.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Relyenong Bangus</h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Fried deboned milkfish, flaked and re-stuffed with vegetables and spices. 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/POT ROAST BEEF_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Pot Roast Beef
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Beef chuck stew serve with oven-roasted vegetables, potatoes, carrots, and onions 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/LENGUA ESTOFADO.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Lengua Estofado
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Is a type of ox tongue stew. The tongue was made very tender and cooked with tomato, soy sauce, vinegar, and sugar.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/PORK BARBECUE_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Pork Barbeque
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>It is composed of thinly sliced pork pieces that are marinated in a special mixture of seasonings and spices.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/SWEET AND SOUR PORK.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Sweet and Sour Pork
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Dish made with juicy pieces of pork tenderloin, bell peppers, onion, and pineapple. 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/CHICKEN ADOBO_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Chicken Adobo
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Braised chicken legs (thighs and/or drumsticks) in a sauce made up of vinegar, soy sauce, garlic, and black pepper.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/SHRIMP IN GARLIC BUTTER SAUCE_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Shrimp in Garlic Butter Sauce
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>A sautéed shrimp cooked in a garlic butter sauce.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/PORK BARBECUE_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Chicken Afritada
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Chicken stew with tomato based sauced. 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/BEEF WITH BROCCOLI_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Beef with Broccoli
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Prepared by stir frying sliced steak and broccoli florets with oyster or soy sauce and aromatics such as garlic and ginger.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/BEEF WITH CREAMY MUSHROOM SAUCE.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Beef with Creamy Mushroom Sauce
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Fork-tender beef and delectable mushroom gravy served over steamed rice, mashed potatoes, or egg noodles
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/SEAFOODS CURRY.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Seafoods Curry
+
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Shrimp, scallops, mussels, and squid are simmered together with lime, curry, and coconut milk
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/FISH FILLET.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Fish Fillet
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Fried flesh of fish coated with flour, salt, pepper, and paprika
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/CALAMARES.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Calamares
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Squid coated with battered flour, baking powder, and salt. With breadcrumbs 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/PORK AFRITADA_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Pork Afritada
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>It is composed of pork shoulder that are cut into 1 inch cubes, carrot, potato, and tomato sauce,  green pea, and bay leaves. 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/BEEF CALDERETA_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Beef Caldereta 
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Beef stewed in tomato with potato, carrot, olives, bell peppers, and liver spread.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/PORK STEAK_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Pork Steak
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Pork Steak is a variation of Bistek Tagalog. These are marinated in lime and soy sauce.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/FRIED CHICKEN_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Fried Chicken
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Fried meat with flour, buttermilk and seasonings.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/BRAISED BEEF STEW.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Braised Beef Stew
+                </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Stirred in the beef broth and wine with tomatoes, Worcestershire sauce, vinegar, thyme, bay leaf, salt and pepper. 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+       
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/FISH IN SWEET AND SOUR SAUCE-.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Fish in sweet and sour sauce                 </h1>
+                  <p>Main Course </p>
+                  <ul>
+                    <li>Fried fish simmered with vinegar, ketchup, reserved pineapple syrup, soy sauce, and sugar.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/PANCIT LAURIAT.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Pancit Lauriat</h1>
+                    <p>Pasta</p>
+                    <ul>
+                      <li>Dish that uses egg noodles that are stir-fried usually with vegetables like carrots, green beans, shitake mushrooms and cabbage, together with slices of pork.
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+       
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/BAKED MACARONI_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Baked Macaroni</h1>
+                    <p>Pasta</p>
+                    <ul>
+                      <li>Combines the rich flavor of beef, vegetable aromatics and the creamy tomato sauce, topped with a generous amounts of cheese.
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/SPAGHETTI_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Spaghetti</h1>
+                    <p>Pasta</p>
+                    <ul>
+                      <li>This version has a sweet tomato based sauce with lots of meat ingredients, hotdogs, onions, garlic, and seasonings
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+       
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/PANCIT BIHON GUISADO_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Pancit Bihon Guisado</h1>
+                    <p>Pasta</p>
+                    <ul>
+                      <li>This dish is composed of rice noodles, shredded chicken, shrimp, and vegetables
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/CREAMY CARBONARA_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Creamy Carbonara</h1>
+                    <p>Pasta</p>
+                    <ul>
+                      <li>Pasta dish combines the smokey flavors of bacon and creamy mushroom sauce
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/EMPANADA_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Empanada</h1>
+                    <p>Appetizer  </p>
+                    <ul>
+                      <li>Empanada, a baked or fried pastry stuffed with any of a variety of fillings, such as meat, cheese, vegetables, fruits, and other ingredients.
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/CAMARON REBOSADO_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Camaron Rebosado
+                    </h1>
+                    <p>Appetizer  </p>
+                    <ul>
+                      <li>Filipino dish made of large shrimp dipped in batter and deep-fried to golden perfection.
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+      
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/LUMPIA SHANGHAI_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Lumpia Shanghai 
+                    </h1>
+                    <p>Appetizer  </p>
+                    <ul>
+                      <li>Is a Filipino deep-fried appetizer consisting of a mixture of giniling (ground pork) with vegetables like carrots, chopped scallions or red onions and garlic, wrapped in a thin egg crêpe.
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/CHOPSUEY SPECIAL_.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Chopseuy Special 
+                </h1>
+                  <p>Veggies </p>
+                  <ul>
+                    <li>Dish consisting of bits of meat, bean sprouts, water chestnuts, and other vegetables, stir-fried and then served with rice.
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/FOUR SEASONS VEGETABLES WITH ASSORTED SEAFOODS.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Four Season Vegetables with Assorted Seafoods
+                </h1>
+                  <p>Veggies </p>
+                  <ul>
+                    <li>Mixed vegetables consist of Carrot, Peas , Green Beans , and Sweetcorn with shrimp, mussels and squids. 
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/CEASAR SALAD.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Ceasar Salad 
+                </h1>
+                  <p>Veggies </p>
+                  <ul>
+                    <li>Green salad of romaine lettuce and croutons dressed with lemon juice (or lime juice), olive oil, eggs or egg yolks, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper.
+
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        
+            <div class="product">
+              <div class="img-container">
+                <img src="image/CATERING SET UP/DISHES/MIXED VEGETABLES WITH EGGS.jpg">
+              </div>
+              <div class="product-info">
+                <div class="product-content">
+                  <h1>Mixed Vegetables with Eggs
+                </h1>
+                  <p>Veggies </p>
+                  <ul>
+                    <li>Mixed vegetables consist of Carrot, Peas , Green Beans , Sweetcorn , and Quail eggs.
+
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/TROPICAL MIXED FRUITS.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Tropical Mixed Fruits
+                    </h1>
+                    <p>Dessert  </p>
+                    <ul>
+                      <li>Mix of diced dates, apricots, pineapple, mango, and papaya, complimented by our flavorful banana chips. 
+
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+       
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/MAJA BLANCA CON MAIS.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Maja Blanca Con Mais
+                    </h1>
+                    <p>Dessert  </p>
+                    <ul>
+                      <li>Filipino coconut pudding composed of coconut milk, white sugar, condensed milk, sweetcorn and cornstarch. 
+
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/CREAMY FRUIT SALAD.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Creamy Fruit Salad
+
+
+                    </h1>
+                    <p>Dessert  </p>
+                    <ul>
+                      <li>Beated cream cheese and sugar with pineapple, fruit cocktail, bananas, apple, coconut, pecans, raisins, and cherries.
+
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+       
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/TROPICAL MIXED FRUITS.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Creamy Leche Flan
+                    </h1>
+                    <p>Dessert  </p>
+                    <ul>
+                      <li>Creamy custard made from eggs and condensed milk, with a sweet caramel on top.
+
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/CREAMY MANGO TAPIOCA.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Creamy Mango Tapioca
+
+                    </h1>
+                    <p>Dessert  </p>
+                    <ul>
+                      <li>Mango tapioca is a refreshing dessert made from sweet mangoes, tapioca or sago, cream and milk.
+
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+      
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/BUKO PANDAN SALAD_.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Buko Pandan Salad
+
+                    </h1>
+                    <p>Dessert  </p>
+                    <ul>
+                      <li>This is a Filipinized fruit salad consisting of pandan jelly, shredded young coconut meat (known as buko), table cream, and sweetened condensed milk. 
+
+
+
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="flexpogi">
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/CRAB AND CORD SOUP.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Crab and Corn Soup
+
+                    </h1>
+                    <p>Soup</p>
+                    <ul>
+                      <li>Comprises of comprises chicken broth, seafood base or shrimp bouillon, lump crab meat, imitation crab, and corn kernels
+
+                      </li>         
+                    </ul>                  
+                  </div>
+                </div>
+              </div>
+        
+            <div class="product">
+                <div class="img-container">
+                  <img src="image/CATERING SET UP/DISHES/CREAM OF MUSHROOMS SOUP.jpg">
+                </div>
+                <div class="product-info">
+                  <div class="product-content">
+                    <h1>Cream of Mushrooms soup
+                    </h1>
+                    <p>Soup</p>
+                    <ul>
+                      <li>Simmered mushrooms, broth, onion, and thyme
+
+                      </li>         
+                    </ul>                  
+                  </div>
+                </div>
+              </div>
+        </div>
+            
+
+    
+            
+          </div>
+        <!-- END KO TO-->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary">Kany<span class="text-dark">áman</span></h1>
+                            <p class="lh-lg mb-4">Discover a fresh take on your favorite traditional Filipino dishes with Kanyáman Catering. Indulge in the authentic flavors of Filipino cuisine expertly crafted by our talented Kapampangan chefs!</p>
+                          
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Attributes</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-check text-primary me-2"></i></i> Quality Food Products</p>
+                                <p><i class="fa fa-check text-primary me-2"></i></i> 24/7 Customer Support</p>
+                                <p><i class="fa fa-check text-primary me-2"></i></i> Easy Customization Options</p>
+                                <p><i class="fa fa-check text-primary me-2"></i></i> Delicious Deals for Delicious Meals</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                              <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Magalang, Pampanga</p>
+                              <p><i class="fa fa-phone-alt text-primary me-2"></i> 0977-676-1401</p>
+                              <p><i class="fas fa-envelope text-primary me-2"></i> kanyamancatering@gmail.com</p>
+                              <p><i class="fab fa-facebook text-primary me-2"></i> Kanyáman Catering </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="image/CATERING SET UP/SOCIAL GALLERY/soc1.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="image/CATERING SET UP/SOCIAL GALLERY/soc2.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="image/CATERING SET UP/SOCIAL GALLERY/soc3.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="image/CATERING SET UP/SOCIAL GALLERY/soc4.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="image/CATERING SET UP/SOCIAL GALLERY/soc5.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="image/CATERING SET UP/SOCIAL GALLERY/soc6.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+       
+        
+          <script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.product');
+let l = document.getElementsByTagName('h1');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('h1')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+        </script>
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

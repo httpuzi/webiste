@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Menu - Kanyáman</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+       
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+.flex{
+    display: flex;
+}
+.paper{
+  background-color: #F2F6DF;
+ width: 40%;
+
+  margin: 40px auto 10px auto;
+  padding: 20px;
+  border-width: 4px;
+  border-style: dotted;
+  border-color: #F2E7C9;
+  height: 50%;
+}
+
+
+h1,h2,h3{
+  font-family: 'Alegreya', serif;
+  color: #5F958A;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.note{
+    font-size: 15px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  font-weight: 900;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+header{
+  border-bottom-color: #416788;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+
+section{
+  background-color: #DDEAD7;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+h3{
+  font-size: 25px;
+  text-align: center;
+}
+
+.dish-title{
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.dish-description{
+  text-align: center;
+  font-weight: 300;
+  margin: 0
+}
+
+.dish-price{
+  text-align: center;
+  font-weight: 700;
+  margin:0;
+}
+
+.dish{
+  margin-bottom: 20px;
+}
+.sedet{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    background-color: #416788;
+    border-radius: 10px;
+    border-style:groove;
+
+}
+.but {
+    color: white;
+}
+.but:hover{
+    color: white;
+}
+.sedet:hover{
+    background-color: black;
+    
+}
+.flexdish{
+    display: flex;
+    justify-content:space-evenly;
+    padding: auto;
+}
+</style>
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+   <!-- Navbar start -->
+   <div class="container-fluid nav-bar">
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-4">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-primary fw-bold mb-0">Kany<span class="text-dark">áman</span> </h1>
+            </a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link  ">Services</a>
+                    <a href="event.html" class="nav-item nav-link">Events</a>
+
+                    <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+               
+                <a href="book.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Inquire Now</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Menu</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    
+                    <li class="breadcrumb-item text-dark" aria-current="page">Menu</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+   
+        <!-- Menu Start -->
+   <div class="package"> 
+    <h3>PACKAGE 1</h3>
+        <div class="paper">
+
+            <header>
+              
+              <h2>SET A ( 750 pesos / HEAD )</h2>
+            </header>
+          
+            <main>
+              <section id="starters">
+                <h3>Main Course </h3>
+              
+                <div class="dish">
+                  <p class="dish-title">Beef Steak 
+                </p>
+
+                </div>
+                <div class="dish">
+                  <p class="dish-title">Garlic Chicken 
+                </p>
+                </div>
+                
+                <div class="dish">
+                  <p class="dish-title">Rice</p>
+        
+                </div>
+          
+             
+                <h3>Appetizer </h3>
+                <div class="dish">
+                  <p class="dish-title">Empanada </p>
+          
+                 
+                </div>
+                
+              
+                <h3>Veggies </h3>
+                <div class="dish">
+                  <p class="dish-title">Chopseuy Special </p>
+                
+                </div>
+                
+             
+                <h3>Dessert 
+                </h3>
+                <div class="dish">
+                  <p class="dish-title">Tropical Mixed Fruits
+                </p>
+                
+                </div>
+                
+             
+                <h3>Drinks </h3>
+                <div class="dish">
+                  <p class="dish-title">Soft drinks 
+                </p>
+                
+                </div>
+                
+              </section>
+
+
+              <section id="pudding">
+                <h3>Prices </h3>
+                <div class="dish">
+                  <p class="dish-title">50 pax = P28, 000.00 </p>
+                  <p class="dish-title">100 pax = P56, 000.00 </p>
+                  <p class="dish-title">150 pax = P84, 000.00 </p>
+                  <br>
+                    
+                  <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                </p>
+                </div>
+                
+              </section>
+
+              <button class="sedet">
+                <a class="but" href="details.html">SEE DETAILS</a>
+              </button>
+
+            </main>
+          
+          </div>
+         
+        <!-- Menu End -->
+
+         <!-- Menu Start -->
+       
+    
+            <div class="paper">
+    
+                <header>
+             
+                  <h2>SET B ( 640 pesos / HEAD )</h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+
+              
+                    <div class="dish">
+                      <p class="dish-title">Beef Caldereta
+
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Pork Steak
+                    </p>
+       </div>
+                  
+
+                    <div class="dish">
+                        <p class="dish-title">Fried Chicken
+      
+                      </div>
+                    <div class="dish">
+                      <p class="dish-title">Rice</p>
+            
+                    </div>
+                  
+             
+              
+                 
+                    <h3>Appetizer </h3>
+                    <div class="dish">
+                      <p class="dish-title">Empanada </p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Pasta </h3>
+                    <div class="dish">
+                      <p class="dish-title">Baked Macaroni  </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Creamy Fruit Salad
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Lemon Iced Tea 
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax = P28, 000.00 </p>
+                      <p class="dish-title">100 pax = P56, 000.00 </p>
+                      <p class="dish-title">150 pax = P84, 000.00 </p>
+                    
+                      <br>
+                    
+                      <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                    </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                   <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+             
+       
+        <!-- Menu End -->
+<br><br><br><br>
+        <!-- Menu Start -->
+        <h3>PACKAGE 2</h3>
+            <div class="paper">
+    
+                <header>
+             
+                  <h2>SET A (  520 pesos / HEAD )
+                </h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+                    <div class="dish">
+                      <p class="dish-title">Pot Roast Beef
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Fish Fillet  
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                        <p class="dish-title">Chicken Pastel
+              
+                      </div>
+
+                    <div class="dish">
+                      <p class="dish-title">Rice
+                      </p>
+            
+                    </div>
+              
+                 
+                    <h3>Appetizer </h3>
+                    <div class="dish">
+                      <p class="dish-title">Lumpia Shanghai </p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Pasta </h3>
+                    <div class="dish">
+                      <p class="dish-title">Pancit Lauriat</p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Buko Pandan Salad
+
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Soft drinks 
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax = P23, 500.00 </p>
+                      <p class="dish-title">100 pax = P47, 000.00 </p>
+                      <p class="dish-title">150 pax = P70, 500.00
+                    </p>
+                    <br>
+                    
+                    <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                  </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                    <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+             
+            <!-- Menu End -->
+    
+             <!-- Menu Start -->
+           
+        
+                <div class="paper">
+        
+                    <header>
+                 
+                      <h2>SET B ( 570 pesos / HEAD )
+                    </h2>
+                    </header>
+                  
+                    <main>
+                      <section id="starters">
+                        <h3>Main Course </h3>
+                        <div class="dish">
+                          <p class="dish-title">Beef with Broccoli 
+
+    
+                        </p>
+        
+                        </div>
+                        <div class="dish">
+                          <p class="dish-title">Garlic Chicken 
+                        </p>
+        
+                        </div>
+                        <div class="dish">
+                          <p class="dish-title">Relyenong Bangus</p>
+                
+                        </div>
+                        <div class="dish">
+                            <p class="dish-title">Rice</p>
+                  
+                          </div>
+                  
+                     
+                        <h3>Appetizer </h3>
+                        <div class="dish">
+                          <p class="dish-title">Camaron Rebosado</p>
+                  
+                         
+                        </div>
+                        
+                      
+                        <h3>Veggies </h3>
+                        <div class="dish">
+                          <p class="dish-title">Caesar Salad </p>
+                        
+                        </div>
+                        
+                     
+                        <h3>Dessert 
+                        </h3>
+                        <div class="dish">
+                          <p class="dish-title">Creamy Leche Flan
+                        </p>
+                        
+                        </div>
+                        
+                     
+                        <h3>Drinks </h3>
+                        <div class="dish">
+                          <p class="dish-title">Lemon Iced Tea 
+                        </p>
+                        
+                        </div>
+                        
+                      </section>
+        
+        
+                      <section id="pudding">
+                        <h3>Prices </h3>
+                        <div class="dish">
+                          <p class="dish-title">50 pax = P26, 000.00 
+                        </p>
+                          <p class="dish-title">100 pax = P47, 000.00 </p>
+                          <p class="dish-title">150 pax = P70, 500.00</p>
+                          <br>
+                    
+                          <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                        </p>
+                        </div>
+                        
+                      </section>
+        
+                      <button class="sedet">
+                        <a class="but" href="details.html">SEE DETAILS</a>
+                      </button>
+        
+                    </main>
+                  
+                  </div>
+        
+
+             
+            <!-- Menu End -->
+
+
+            <!-- Menu Start -->
+           
+        
+                <div class="paper">
+        
+                    <header>
+                 
+                      <h2>SET B ( 570 pesos / HEAD )
+                    </h2>
+                    </header>
+                  
+                    <main>
+                      <section id="starters">
+                        <h3>Main Course </h3>
+                        <div class="dish">
+                          <p class="dish-title">Beef with Broccoli 
+
+    
+                        </p>
+        
+                        </div>
+                        <div class="dish">
+                          <p class="dish-title">Garlic Chicken 
+                        </p>
+        
+                        </div>
+                        <div class="dish">
+                          <p class="dish-title">Relyenong Bangus</p>
+                
+                        </div>
+                        <div class="dish">
+                            <p class="dish-title">Rice</p>
+                  
+                          </div>
+                  
+                     
+                        <h3>Appetizer </h3>
+                        <div class="dish">
+                          <p class="dish-title">Camaron Rebosado</p>
+                  
+                         
+                        </div>
+                        
+                      
+                        <h3>Veggies </h3>
+                        <div class="dish">
+                          <p class="dish-title">Caesar Salad </p>
+                        
+                        </div>
+                        
+                     
+                        <h3>Dessert 
+                        </h3>
+                        <div class="dish">
+                          <p class="dish-title">Creamy Leche Flan
+                        </p>
+                        
+                        </div>
+                        
+                     
+                        <h3>Drinks </h3>
+                        <div class="dish">
+                          <p class="dish-title">Lemon Iced Tea 
+                        </p>
+                        
+                        </div>
+                        
+                      </section>
+        
+        
+                      <section id="pudding">
+                        <h3>Prices </h3>
+                        <div class="dish">
+                          <p class="dish-title">50 pax = P26, 000.00 
+                        </p>
+                          <p class="dish-title">100 pax = P47, 000.00 </p>
+                          <p class="dish-title">150 pax = P70, 500.00</p>
+                          <br>
+                    
+                          <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                        </p>
+                        </div>
+                        
+                      </section>
+        
+                      <button class="sedet">
+                        <a class="but" href="details.html">SEE DETAILS</a>
+                      </button>
+        
+                    </main>
+                  
+                  </div>
+        
+
+             
+            <!-- Menu End -->
+            <br><br><br><br>
+        <!-- Menu Start -->
+        <h3>PACKAGE 3</h3>
+            <div class="paper">
+    
+                <header>
+             
+                  <h2>SET A ( 490 pesos / HEAD )
+
+                </h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+                    <div class="dish">
+                      <p class="dish-title">Beef Caldereta
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Pork Steak
+                    </p>
+    
+                    </div>
+                   
+
+                    <div class="dish">
+                      <p class="dish-title">Rice
+                      </p>
+            
+                    </div>
+              
+                 
+                    <h3>Appetizer </h3>
+                    <div class="dish">
+                      <p class="dish-title">Empanada</p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Pasta </h3>
+                    <div class="dish">
+                      <p class="dish-title">Baked Macaroni </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Creamy Fruit Salad
+
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Lemon Iced Tea 
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax = P22, 000. 00</p>
+                      <p class="dish-title">100 pax = P44, 000.00</p>
+                      <p class="dish-title">150 pax = P66, 000.00
+                    </p>
+                    <br>
+                    
+                    <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                  </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                    <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+             
+            <!-- Menu End -->
+
+            <div class="paper">
+    
+                <header>
+             
+                  <h2>SET B ( 610 pesos / HEAD )
+
+                </h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+                    <div class="dish">
+                      <p class="dish-title">Braised Beef Stew
+
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Baby Back Ribs
+                    </p>
+    
+                    </div>
+
+                    <div class="dish">
+                        <p class="dish-title">Chicken Cordon Bleu
+                      </p>
+      
+                      </div>
+                   
+
+                    <div class="dish">
+                      <p class="dish-title">Rice
+                      </p>
+            
+                    </div>
+              
+                 
+                    <h3>Veggies  </h3>
+                    <div class="dish">
+                      <p class="dish-title">Ceasar Salad</p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Pasta </h3>
+                    <div class="dish">
+                      <p class="dish-title">Spaghetti  </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Buko Pandan Salad
+
+
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Soft drinks 
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax = P28, 000.00</p>
+                      <p class="dish-title">100 pax = P56, 000.00</p>
+                      <p class="dish-title">150 pax = P84, 000.00
+                    </p>
+                    <br>
+                    
+                    <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                  </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                    <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+             
+            <!-- Menu End -->
+            <div class="paper">
+    
+                <header>
+             
+                  <h2>SET C ( 520 pesos / HEAD )
+
+                </h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+                    <div class="dish">
+                      <p class="dish-title">Lengua Estofado
+
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Pork Barbeque 
+                    </p>
+    
+                    </div>
+
+                    <div class="dish">
+                        <p class="dish-title">Chicken Afritada
+                      </p>
+      
+                      </div>
+                   
+
+                    <div class="dish">
+                      <p class="dish-title">Rice
+                      </p>
+            
+                    </div>
+              
+                 
+                    <h3>Veggies  </h3>
+                    <div class="dish">
+                      <p class="dish-title">Chopseuy Special </p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Appetizer  </h3>
+                    <div class="dish">
+                      <p class="dish-title">Cameron Rebosado  </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Maja Blanca Con Mais
+
+
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Lemon Iced Tea 
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax = P23, 500.00</p>
+                      <p class="dish-title">100 pax = P47, 000.00</p>
+                      <p class="dish-title">150 pax = P70, 500. 00
+                    </p>
+                    <br>
+                    
+                    <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                  </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                    <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+             
+            <!-- Menu End -->
+
+            <br><br><br><br>
+        <!-- Menu Start -->
+        <h3>PACKAGE 4</h3>
+            <div class="paper">
+    
+                <header>
+             
+                  <h2>SET A ( 790 pesos / HEAD )
+                </h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+                    <div class="dish">
+                      <p class="dish-title">Beef with Creamy Mushroom Sauce
+
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Baby Back Ribs 
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                        <p class="dish-title">Chicken Pastel 
+              
+                      </div>
+
+                      <div class="dish">
+                        <p class="dish-title">Seafoods Curry
+              
+                      </div>
+
+                    <div class="dish">
+                      <p class="dish-title">Rice
+                      </p>
+            
+                    </div>
+              
+                 
+                    <h3>Appetizer </h3>
+                    <div class="dish">
+                      <p class="dish-title">Lumpia Shanghai </p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Pasta </h3>
+                    <div class="dish">
+                      <p class="dish-title">Spaghetti </p>
+                    
+                    </div>
+
+                    <h3>Soup  </h3>
+                    <div class="dish">
+                      <p class="dish-title">Crab and Corn Soup</p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Buko Pandan
+
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Soft drinks 
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax =  P37, 000.00</p>
+                      <p class="dish-title">100 pax = P74, 000.00 </p>
+                      <p class="dish-title">150 pax = P111, 000.00
+                    </p>
+                    <br>
+                    
+                    <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                  </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                    <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+             
+            <!-- Menu End -->
+
+            <div class="paper">
+        
+                <header>
+             
+                  <h2>SET B  ( 770 pesos / HEAD )
+                </h2>
+                </header>
+              
+                <main>
+                  <section id="starters">
+                    <h3>Main Course </h3>
+                    <div class="dish">
+                      <p class="dish-title">Beef Steak
+
+
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Pork Afritada 
+                    </p>
+    
+                    </div>
+                    <div class="dish">
+                      <p class="dish-title">Chicken Cordon Bleu </p>
+            
+                    </div>
+
+                    <div class="dish">
+                        <p class="dish-title">Calamares </p>
+              
+                      </div>
+                    <div class="dish">
+                        <p class="dish-title">Rice</p>
+              
+                      </div>
+              
+                 
+                    <h3>Pasta </h3>
+                    <div class="dish">
+                      <p class="dish-title">Pancit Bihon Guisado</p>
+              
+                     
+                    </div>
+                    
+                  
+                    <h3>Veggies </h3>
+                    <div class="dish">
+                      <p class="dish-title">Four Season Vegetables with Assorted Seafoods </p>
+                    
+                    </div>
+                    
+                    <h3>Soup
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Cream of Mushrooms soup
+                    </p>
+                    
+                    </div>
+
+                    <h3>Dessert 
+                    </h3>
+                    <div class="dish">
+                      <p class="dish-title">Creamy Leche Flan
+                    </p>
+                    
+                    </div>
+                    
+                 
+                    <h3>Drinks </h3>
+                    <div class="dish">
+                      <p class="dish-title">Soft drinks  
+                    </p>
+                    
+                    </div>
+                    
+                  </section>
+    
+    
+                  <section id="pudding">
+                    <h3>Prices </h3>
+                    <div class="dish">
+                      <p class="dish-title">50 pax = P36, 000.00
+                    </p>
+                      <p class="dish-title">100 pax = P72, 000.00 </p>
+                      <p class="dish-title">150 pax = P108, 000.00</p>
+                      <br>
+                    
+                      <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                    </p>
+                    </div>
+                    
+                  </section>
+    
+                  <button class="sedet">
+                    <a class="but" href="details.html">SEE DETAILS</a>
+                  </button>
+    
+                </main>
+              
+              </div>
+    
+
+         
+        <!-- Menu End -->
+
+        <div class="paper">
+        
+            <header>
+         
+              <h2>SET C ( 750  pesos / HEAD ) 
+            </h2>
+            </header>
+          
+            <main>
+              <section id="starters">
+                <h3>Main Course </h3>
+                <div class="dish">
+                  <p class="dish-title">Beef Kaldareta
+
+
+                </p>
+
+                </div>
+                <div class="dish">
+                  <p class="dish-title">Sweet and Sour Pork
+                </p>
+
+                </div>
+                <div class="dish">
+                  <p class="dish-title">Chicken Adobo</p>
+        
+                </div>
+
+                <div class="dish">
+                    <p class="dish-title">Shrimp in Garlic Butter Sauce 
+                    </p>
+          
+                  </div>
+                <div class="dish">
+                    <p class="dish-title">Rice</p>
+          
+                  </div>
+          
+             
+                <h3>Pasta </h3>
+                <div class="dish">
+                  <p class="dish-title">Creamy Carbonara</p>
+          
+                 
+                </div>
+                
+              
+                <h3>Appetizer  </h3>
+                <div class="dish">
+                  <p class="dish-title">Chicken Cordon Bleu </p>
+                
+                </div>
+                
+                <h3>Soup
+                </h3>
+                <div class="dish">
+                  <p class="dish-title">Crab and Corn Soup 
+                </p>
+                
+                </div>
+
+                <h3>Dessert 
+                </h3>
+                <div class="dish">
+                  <p class="dish-title">Creamy Fruit Salad 
+                </p>
+                
+                </div>
+                
+             
+                <h3>Drinks </h3>
+                <div class="dish">
+                  <p class="dish-title">Lemon Iced Tea
+                </p>
+                
+                </div>
+                
+              </section>
+
+
+              <section id="pudding">
+                <h3>Prices </h3>
+                <div class="dish">
+                  <p class="dish-title">50 pax = P35, 000.00 
+                </p>
+                  <p class="dish-title">100 pax = P70, 000.00 </p>
+                  <p class="dish-title">150 pax = P105, 000.00</p>
+                  <br>
+                    
+                  <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+                </p>
+                </div>
+                
+              </section>
+
+              <button class="sedet">
+                <a class="but" href="details.html">SEE DETAILS</a>
+              </button>
+
+            </main>
+          
+          </div>
+
+
+     
+    <!-- Menu End -->
+
+    <div class="paper">
+        
+        <header>
+     
+          <h2>PACK LUNCH  MENU ( 250 pesos/ HEAD )
+            <h3>( Choose one of each minimum of 50 pax )</h3>
+        </h2>
+        </header>
+      
+        <main>
+          <section id="starters">
+            <h3>Main Course </h3>
+            <div class="dish">
+              <p class="dish-title">Beef Steak 
+
+            </p>
+
+            </div>
+            <div class="dish">
+              <p class="dish-title">Fish in Sweet and Sour Sauce
+            </p>
+
+            </div>
+            <div class="dish">
+              <p class="dish-title">Garlic Chicken </p>
+    
+            </div>
+
+            <div class="dish">
+                <p class="dish-title">Fish Fillet
+                </p>
+      
+              </div>
+            <div class="dish">
+                <p class="dish-title">Chicken Pastel</p>
+      
+              </div>
+
+              <div class="dish">
+                <p class="dish-title">Pork Afritada</p>
+      
+              </div>
+      
+         
+            <h3>Sides</h3>
+            <div class="dish">
+              <p class="dish-title">Sotanghon</p>
+      
+             
+            </div>
+            <div class="dish">
+                <p class="dish-title">Lumpia Shanghai </p>
+        
+               
+              </div>
+              <div class="dish">
+                <p class="dish-title">Camaron Rebosado </p>
+        
+               
+              </div>
+              <div class="dish">
+                <p class="dish-title">Empanada</p>
+        
+               
+              </div>
+            
+          
+           
+
+            <h3>Dessert 
+            </h3>
+            <div class="dish">
+              <p class="dish-title">Cassava Square
+            </p>
+            
+            </div>
+            <div class="dish">
+                <p class="dish-title">Maja Blanca Square 
+              </p>
+              
+              </div>
+              <div class="dish">
+                <p class="dish-title">Brownies 
+              </p>
+              
+              </div>
+            
+         
+            <h3>Drinks </h3>
+            <div class="dish">
+              <p class="dish-title">C2 Bottle Tea
+            </p>
+            
+            </div>
+            <div class="dish">
+                <p class="dish-title">Coke Sakto
+              </p>
+              
+              </div>
+              <div class="dish">
+                <p class="dish-title">Mineral Water ( 500 ml )
+              </p>
+              
+              </div>
+            
+          </section>
+
+
+          <section id="pudding">
+            <h3>Prices </h3>
+            <div class="dish">
+              <p class="dish-title">50 pax = P12, 500.00
+            </p>
+              <p class="dish-title">100 pax = P25, 000.00 </p>
+              <p class="dish-title">150 pax = P37, 500.00</p>
+              <br>
+                    
+              <p class="note">Note: Set menu and number of pax may be customized upon request or quotation inquiries
+            </p>
+            </div>
+            
+          </section>
+
+          <button class="sedet">
+            <a class="but" href="details.html">SEE DETAILS</a>
+          </button>
+
+        </main>
+      
+      </div>
+
+
+ 
+<!-- Menu End -->
+    
+    
+       
+     <!-- Footer Start -->
+     <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow " >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">Kany<span class="text-dark">áman</span></h1>
+                        <p class="lh-lg mb-4">Discover a fresh take on your favorite traditional Filipino dishes with Kanyáman Catering. Indulge in the authentic flavors of Filipino cuisine expertly crafted by our talented Kapampangan chefs!</p>
+                      
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Attributes</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-check text-primary me-2"></i></i> Quality Food Products</p>
+                            <p><i class="fa fa-check text-primary me-2"></i></i> 24/7 Customer Support</p>
+                            <p><i class="fa fa-check text-primary me-2"></i></i> Easy Customization Options</p>
+                            <p><i class="fa fa-check text-primary me-2"></i></i> Delicious Deals for Delicious Meals</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                          <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Magalang, Pampanga</p>
+                          <p><i class="fa fa-phone-alt text-primary me-2"></i> 0977-676-1401</p>
+                          <p><i class="fas fa-envelope text-primary me-2"></i> kanyamancatering@gmail.com</p>
+                          <p><i class="fab fa-facebook text-primary me-2"></i> Kanyáman Catering </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Social Gallery</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                 <img src="image/CATERING SET UP/SOCIAL GALLERY/soc1.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="image/CATERING SET UP/SOCIAL GALLERY/soc2.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="image/CATERING SET UP/SOCIAL GALLERY/soc3.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="image/CATERING SET UP/SOCIAL GALLERY/soc4.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="image/CATERING SET UP/SOCIAL GALLERY/soc5.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="image/CATERING SET UP/SOCIAL GALLERY/soc6.jpeg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
